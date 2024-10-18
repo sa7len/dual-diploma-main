@@ -1,0 +1,105 @@
+*{
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+}
+.header{
+    position: relative;
+}
+.head{
+    background-color: #004333;
+    display: flex;
+    align-items: center;
+    .logo{
+        height: 2.8rem;
+        margin: .5rem .3rem
+    }
+    .vertical-line {
+        width: 1px; 
+        height: 30px; 
+        background-color: #fff; 
+        left: 420px;
+        position: absolute;
+        
+      }
+      p{
+        font-size: 24px;
+        position: absolute;
+        left: 450px;
+        color: #fff;
+        font-weight: 100;
+      }
+      
+}
+.main-nav{
+    position: relative;
+}
+
+.nav-container{
+    .navbar{ 
+        nav{
+            background-color:#00433398 ;
+            position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+            ul{
+                display: flex;
+                margin: 10px;
+                list-style: none;
+        
+                li{
+                    margin-left: 80px;
+                    a{
+                    font-weight: 700;
+                    color: #fff;
+                    }
+                }
+                .underline-effect {
+                    display: inline-block;
+                    position: relative;
+                    color: #fff;
+                    text-decoration: none;
+                }
+        
+                .underline-effect::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 3px;
+                    bottom: -2px;
+                    left: 0;
+                    background-color: rgb(255, 255, 255);
+                    transform: scaleX(0);
+                    transform-origin: bottom right;
+                    transition: transform 0.3s ease-out;
+                }
+        
+                .underline-effect:hover::after {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+            }
+        }
+    }
+
+}
+.apply{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #00000082;
+    p{
+        font-size: 40px;
+        margin: 20px;
+        color: #fff;
+        z-index: 1000;
+        text-align: center;
+    }
+}
+.bg-container{
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}

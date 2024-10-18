@@ -1,0 +1,38 @@
+.side-menu {
+    width: 300px;
+    background-color: #014d40; /* Tünd yaşıl rəng */
+    padding: 20px;
+    color: white;
+  }
+  
+  .side-menu h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif; /* Fontu 'Open Sans' edə bilərsən */
+  }
+  
+  .side-menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .side-menu li {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #024d40;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .side-menu li.active {
+    background-color: #66b032; /* Yaşıl rəng seçilmiş item */
+  }
+  
+  .side-menu li:hover {
+    background-color: #006d54;
+  }
+  
+  .side-menu li.active:hover {
+    background-color: #66b032; /* Seçilmiş hissədə hover */
+  }

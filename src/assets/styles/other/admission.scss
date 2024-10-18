@@ -1,0 +1,101 @@
+// Variables for colors and reusable values
+$primary-color: #ffffff;
+$background-color: #f5f5f5;
+$button-hover-color: darken($primary-color, 10%);
+$input-border-color: #ddd;
+$input-focus-color: $primary-color;
+$border-radius: 5px;
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+// General reset
+* {
+    color: rgb(227, 227, 227);
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+} 
+  .bg-container{
+    background-image: url('../../images/vadim-sherbakov-d6ebY-faOO0-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Arka planı sabitler */
+    width: 100%;
+    height: 100%; 
+    .login-container {
+        position: absolute;
+        top: 135px;
+        left: 34%;
+      background-color: #002119a0;
+      padding-top: 2rem;
+      padding-bottom: 1em;
+      max-width: 80vh;
+      z-index: 999;
+      
+      .login-title {
+        font-size: 1.8rem;
+        color: $primary-color;
+        text-align: center;
+      }
+    
+      // Input styles
+      .login-input {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 1rem;
+        border: 1px solid $input-border-color;
+        border-radius: $border-radius;
+        font-size: 1rem;
+      }
+      .input-container{
+        text-align: center;
+        input{
+            margin-top: 1em;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: none;
+            border-bottom: 2px solid #fff;
+            font-size: 16px;
+            background: none;
+            background-color: transparent;
+            
+        }
+        input:focus {
+            outline: none;
+            border-bottom-color: #fff;
+          }
+        ::placeholder{
+            color: rgb(180, 180, 180);
+            font-size: 14px;
+            padding-left: 3px;
+        }
+        button{
+            margin-top: 1.5em;
+            padding: 8px 14px;
+            font-size: 16px;
+            background-color: #00211950;
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+        }
+      }
+    
+      // Button styles
+      .login-button {
+        width: 100%;
+        padding: 0.8rem;
+        background-color: $primary-color;
+        color: rgba(34, 34, 34, 0.499);
+        border: none;
+        border-radius: $border-radius;
+        font-size: 1rem;
+        cursor: pointer;
+        &:hover {
+          background-color: $button-hover-color;
+        }
+    
+      }
+    }
+    
+  }
+   
+
